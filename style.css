@@ -1,0 +1,1652 @@
+/* デフォルトのカテゴリ表示を1階層目までにする*/
+.aside section.__block.__block--category .__body ul.__tree > li.__item.__item--has-children > span.__js-toggle {
+  display: inline-block;
+}
+.aside section.__block.__block--category .__body ul.__tree > li.__item.__item--has-children > ul {
+  display: none;
+}
+
+/* 商品一覧でのSOLD OUT表示を有効にする */
+.p-product-block ul.__product li.__item.__is-soldout .__photo .__soldout { display: block; }
+.main.main--product-list section.__list.__list--row ul.__product li.__item.__is-soldout a table tr td.__photo .__soldout { display: block; }
+
+/* トップぺージ商品一覧の画像を大きく */
+@media (min-width: 1280px) {
+    .p-product-block ul.__product li.__item {
+      width: 25%; } }
+
+.hidden_box {
+  margin: 3em 0;/*前後の余白*/
+  padding: 0;
+  text-align: center;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+  padding: 15px;
+  font-weight: bold;
+  border: solid 1px black;
+  cursor :pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+  background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+  padding: 20px 0;
+  height: auto;
+  opacity: 1;
+  text-align: left;
+}
+
+.meigara_list_wrapp {
+  background: url(https://gigaplus.makeshop.jp/sakekagiya/img2019/meigara_list_bg.jpg) no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.meigara_list {
+  text-align: left;
+}
+
+.meigara_list li {
+  display: inline-block;
+  width: 120px;
+  margin: 10px;
+  box-shadow: 2px 2px 4px gray;
+}
+.meigara_list li a {
+  display: block;
+  /* position: relative; */
+  line-height: 16px;
+}
+.meigara_list li a span {
+  position: absolute;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 10px;
+}
+.meigara_list li a span.tag_sake {
+  background: #001c57;
+}
+.meigara_list li a span.tag_shochu {
+  background: #6c3904;
+  line-height: 16px;
+}
+.meigara_list li a span.tag_liqueur {
+  background: #ef646f;
+  line-height: 16px;
+}
+.meigara_list li a span.tag_speciality {
+  background: #496b00;
+  line-height: 16px;
+}
+
+@-moz-document url-prefix(){}
+
+
+.meigara_list li a img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .meigara_ttl {
+      margin-bottom: 64px;
+  }
+  .whats-new_title {
+      margin-top: 64px;
+  }
+  .rank_nmber {
+      font-size: 30px;
+      margin-bottom: 5px;
+  }
+  .rank_name,
+  .rank_price {
+      font-size: 11px;
+  }
+}
+
+/*スペックテーブルタグ*/
+
+table.spec {
+  width: 100%
+}
+
+table th.spec {
+  width: 30%;
+  padding: 0.75em 1em;
+  border: solid 1px #ddd;
+  background: #f2f2f2;
+  vertical-align: top;
+}
+
+table td.spec {
+  border: solid 1px #ddd;
+  padding: 0.75em 1em;
+  vertical-align: top;
+}
+
+/*4つ画像並べる*/
+.container{
+  width: 100%;
+}
+
+/* <ul>container-shimoi</ul>の中にある子要素を横に並べる*/
+.container-shimoi{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0%;
+}
+
+.container-box{
+  margin: 1%;
+}
+
+.bannar-1{
+  width: 100%;
+}
+
+/*使いまわせる長方形のcss*/
+.kuuhaku-box{
+  background-color: azure;
+  height: auto;
+  width: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.title-tukaimawashi{
+  padding-left: 2%;
+  padding-top: 1%;
+  margin-bottom: auto;
+}
+
+/*.wine-main-container1を横並びに並び変える*/
+.wine-main-container1{
+  display: flex;
+  justify-content: space-around;
+}
+.wine-origin{
+  width: 100%;
+  height: auto;
+}
+
+/*.wine-main-container2を横並びに並び変える*/
+.wine-main-container2{
+  display: flex;
+  justify-content: space-around;
+}
+.wine-origin{
+  width: 100%;
+  height: 100%;
+}
+
+/*.importer-name-boxを横並びにかつ綺麗に並び変える*/
+.importer-name-box{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.real-importer{
+  width: 100%;
+  display: block;
+}
+
+/*769px以下は.wine-main-container1の並びを変える*/
+@media (max-width: 769px){
+  .wine-main-container1{
+      flex-direction: column;
+  }
+}
+
+/*769px以下は.importer-box-responsiveを表示させない*/
+@media (max-width: 769px){
+  .wine-main-container2{
+      flex-direction: column;
+  }
+}
+
+/*426px以下は.importer-box-responsiveを表示させない*/
+@media (max-width: 425px){
+  .importer-box{
+      display: none;
+  }
+}
+/*426pxからは.importer-box-responsiveを表示させない*/
+@media (min-width: 426px){
+  .importer-box-responsive{
+      display: none;
+  }
+}
+
+/*class="importer-name-box-responsive"を2列に並び変える*/
+.importer-name-box-responsive{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+
+
+/*トップページのモバイルスライダーを768px以上で表示させない*/
+@media (min-width: 768px){
+  .mobile-bannar-slider{
+      display: none;
+  }
+}
+
+/*トップページのPC用スライダーを768px以下でで表示させない*/
+@media (max-width: 767px){
+  .pc-bannar-slider{
+      display: none;
+  }
+}
+.bxslider{
+  background-size: cover;
+}
+
+.bannar-image-size{
+  width: 100%;
+}
+.mobile-bannar{
+  width: 100%;
+}
+@media (min-width: 768px){
+  .mobile-top-bannar-slider{
+      display: none;
+  }
+}
+/*トップページのPC用スライダーを768px以下でで表示させない*/
+@media (max-width: 767px){
+  .pc-top-bannar-slider{
+      display: none;
+  }
+}
+
+.major-importer-name-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.major-responsive{
+  display: flex;
+  justify-content: space-between;
+}
+.ul-box1{
+  padding: 0;
+}
+
+.ul-box2{
+  padding: 0;
+}
+
+.ul-box3{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+.li_t{
+  padding: 0.3rem;
+}
+
+.li_m{
+  padding: 0.3rem;
+}
+.li_b{
+  padding: 0.3rem;
+}
+.contents{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0.2rem;
+}
+
+@media (max-width: 425px){
+  .ul-box3{
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+.li_m{
+width:25%
+}
+
+.li_t{
+width:25%
+}
+
+.li_b{
+width:25%
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 425px){
+  .li_m{
+      width:  49% !important;
+  }
+}
+@media (max-width: 425px){
+  .li_t{
+      width:  49% !important;
+  }
+}
+@media (max-width: 425px){
+  .li_b{
+      width:  49% !important;
+  }
+}
+@media (min-width: 426px){
+  .mobie-newtopic-container{
+      display: none;
+  }
+}
+.mobile-newtopic-ul{
+      list-style: none;
+      padding: 0;
+
+}
+
+.mobile-newtopic-box2{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.mobile-newtopic-box2 li{
+  height: 400px;
+  margin: 0.3rem;
+  width: 47%;
+}
+.mobile-newtopic-box3 li{
+  height: 361px;
+  margin: 0.3rem;
+  width: 94%;
+}
+.mobile-newtopic-box3{
+  width: 50%;
+}
+
+
+.clearfix{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.clearfix li{
+  width: 48%;
+}
+#ui-tab{
+  background-color: #fff;
+}
+
+/*426px以下は.importer-box-responsiveを表示させない*/
+@media (min-width: 425px){
+  .clearfix li{
+      width: 25%;
+      padding: 2px;
+  }
+}
+.restock-ul{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.restock-container{
+ padding: 0;
+  margin: 0px;
+}
+
+@media (min-width: 426px){
+  .mobile-restock-container{
+      display: none;
+  }
+}
+.mobie-restockbox{
+  width: 50%;
+}
+.mobie-restockbox li{
+  width: 94%;
+  margin: 5px;
+  height: 287px;
+}
+@media (min-width: 426px){
+  .mobile-restock-container01{
+      display: none;
+  }
+}
+.restock-ul-01{
+  padding: 0;
+}
+.restock-ul-01 li{
+  width: 46%;
+  list-style: none;
+}
+.mobie-restockbox-01{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.restock-ul-01 img{
+  width: 100%;
+}
+
+
+.more-watch-newtopic{
+  margin-top: 35px;
+}
+
+.mobile-newtopic-box2 .what_new_name{
+  height: 40px;
+}
+
+.contents-tokusyuu{
+  list-style: none;
+  padding: 0;
+}
+.tokusyuu-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tokusyuu-box li{
+  width: 98%;
+}
+.tokusyuu-box{
+   width: 50%;
+}
+
+.tokusyuu-box li img{
+  width: 100%;
+}
+.pc_shochu_news_box{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.main_contents_news_r_box{
+  height: 280px;
+  overflow-y: scroll;
+}
+.main_contents_news_r table tr td table{
+  width: 465px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-bottom: 1px dashed #D1D1D1;
+}
+.main_contents_news_r{
+  margin: 5px;
+  width: 70%;
+}
+
+
+.main_contents_news_l{
+  margin: 5px;
+  width: 30%;
+}
+
+@media (max-width: 425px){
+  .pc_shochu_news_box .main_contents_news_l{
+      display: none;
+  }
+}
+@media (max-width: 425px){
+  .pc_shochu_news_box .main_contents_news_r{
+      width: 100%;
+  }
+}
+
+@media (min-width: 426px){
+  .mobile_shochu_news_box{
+      display: none;
+  }
+}
+.mobile_shochu_news_box main_contents_news_r_box{
+  margin-bottom: 20px;
+}
+
+.mobile_shochu_news_box  table{   
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-bottom: 1px dashed #D1D1D1;
+}
+.mobile_shochu_news_box{
+  margin-bottom: 15px;
+}
+.tokusyuu-small-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.tokusyuu-small-box{
+  margin: 3px;
+  width: 33%;
+ 
+}
+.tokusyuu-small-box img{
+   width: 100%;
+}
+
+.shochu-box001{
+  display: flex;
+  margin: 3px;
+}
+
+.shochu-box002{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3px;
+}
+
+.shochu-box003{
+  width: 50%;
+}
+
+.shochu-box002 img{
+  width: 100%;
+}
+
+.shochu-box003 img{
+  width: 100%;
+}
+
+.shochu-box004{
+  width: 20%;
+  margin: 3px;
+}
+
+.shochu-box005{
+  width: 60%;
+  margin: 3px;
+}
+
+.shochu-box004 img{
+  width: 100%;
+  height: 96%;
+}
+
+.shochu-box005 img{
+  width: 100%;
+}
+
+.shochu-box006{
+  display: flex;
+}
+.shochu-box007{
+  display: flex;
+  justify-content: space-between;
+}
+
+.shochu-box008 img{
+  width: 100%;
+}
+
+.shochu-box008 {
+  width: 33%;
+}
+
+.sakagura-box {
+  width: 25%;
+  padding: 5px;
+
+}
+.hokkaido-tohoku-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.kantou-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.tyuubu-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.kinki-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.tyugoku-shikoku-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.kyuusyuu-okinawa-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.neigara-group{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.meigara-box{
+  width: 20%;
+}
+#meigara-body{
+  border-top: solid #d3d3d3;
+  border-right: solid #d3d3d3;
+  border-left: solid #d3d3d3
+}
+
+.gyou{
+  margin: 10px;
+}
+
+.aiueo-jyun{
+  border-bottom: solid #d3d3d3;
+  padding-bottom: 20px;
+
+}
+
+#meigara-header img{
+  width: 100%;
+}
+
+.producer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.producer-box{
+  width: 23%;
+  margin: 4px;
+}
+
+@media (max-width: 425px){
+  .producer-container{
+      display: none;
+  }
+}
+
+.importer-name-01{
+  width: 23%;
+  margin: 4px;
+}
+.importer{
+  width: 23%;
+  margin: 4px;
+}
+
+.mobile-producer-container .producer-box{
+  width: 48%;
+  margin: 2px;
+}
+
+
+.mobile-producer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.importer-box-responsive .importer{
+  width: 47%;
+}
+@media (min-width: 426px){
+  .mobile-producer-container{
+   display: none;
+  }
+}
+
+.importer-box-responsive .importer-name-01{
+  width: 47%;
+}
+
+@media (max-width: 425px){
+  .sakagura-box{
+      width: 49%;  
+      margin: 1px;
+  }
+}
+.sakagura-box img{
+  width: 100%;
+}
+
+.liqueur-bannar img{
+  width: 100%;
+}
+.bxslider img{
+  width: 100%;
+}
+@media (max-width: 959px){
+  .__child{
+       display: none;
+  }
+}
+
+
+.toppage-maigara .meigara-box{
+  width: 16%;
+}
+
+.toppage-maigara {
+  padding-left: 27px;
+}
+
+.toppage-toriatukaimeigara{
+  padding-left: 24px;
+}
+
+@media (max-width: 959px){
+  .aside iframe{
+      width: 100%;
+}
+}
+
+.main_contents_recommended_box_in{
+  margin-bottom: 15px;
+  border: 1px solid #D6D6D6;
+  padding: 10px;
+  display: inline-flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.liqueur-img-box{
+  width: 40%;
+  margin-right: 20px;
+}
+@media (max-width: 425px){
+  .main_contents_recommended_box_in{
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+      align-items: flex-start;
+      width: 100%;
+  }
+}
+
+@media (max-width: 425px){
+  .restock-ul .li_t{
+      width: 50%;
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px){
+  .restock-ul .li_b{
+      width: 50%;
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px){
+  .restock-ul .li_m{
+      width: 50%;
+      margin-bottom: 10px;
+  }
+}
+.sake-link-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1278px){
+  .liqueur-img-box{
+      width: 100%;
+  }
+}
+
+.main_contents_recommended_box_in_text p{
+  margin-top: 0px;
+}
+
+.recomend-h3{
+  margin-top: 0px;
+}
+
+.main_contents_recommended_box_in_text h3{
+  margin-top: 0px;
+}
+
+@media (min-width: 425px){
+  .main_contents_recommended_box_in_text{
+      padding-left: 10px;
+      width: 100%;
+  }
+}
+
+.ul-box3 .what_new_name{
+  margin-bottom: 0px;
+}
+
+.ul-box3 .what_new_text{
+  margin-top: 0px;
+}
+
+.shochu-img-box{
+  width: 40%;
+  margin-right: 20px;
+}
+.tokusyuu-small-box img {
+  width: 100%;
+  margin: auto;
+ display: block;
+}
+
+@media (max-width: 576px){
+  .tokusyuu-small-box img {
+      width: 100%;
+  }
+}
+
+.nihonsyu-tokusyuu-small-box{
+  width: 33%;
+}
+
+.nihonsyu-tokusyuu-small-box img{
+  width: 100%;
+}
+
+.nihonsyupage-banner img{
+  width: 100%;
+}
+
+.shochu-recommend-banner img{
+  width: 100%;
+}
+
+.ul-box3 .what_new_date{
+      margin-bottom: 2px;
+      margin-top: 2px;
+      font-size: 12px;
+      text-align: right;
+}
+
+@media (min-width: 425px){
+  .ul-box3 .what_new_name{
+      font-size: 14px;
+      margin-top: 2px;
+      margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 425px){
+  .ul-box3 .what_new_text{
+      font-size: 14px;
+  }
+}
+
+.liqueur-banner img{
+  width: 100%;
+}
+
+@media (min-width: 425px){
+　.nihonsyupage-banner{
+  margin-top: 40px;
+  }
+}
+
+.restock-ul .what_new_date{
+      margin-bottom: 2px;
+      margin-top: 2px;
+      font-size: 12px;
+      text-align: right;
+}
+
+@media (min-width: 425px){
+  .restock-ul .what_new_name{
+      font-size: 14px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+  }
+}
+
+@media (min-width: 425px){
+  .restock-ul .what_new_text{
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 425px){
+  .nihonsyupage-banner{
+      display: none;
+  }
+}
+
+@media (min-width: 426px){
+  .nihonsyupage-banner-mobile{
+      display: none;
+  }
+}
+
+.restock-container{
+  margin-bottom: 20px;
+}
+.header-banner-sample{
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+.header-banner-sample ul{
+  display: table-row;
+  list-style-type: none;
+}
+.header-link{
+  display: table-cell;
+  vertical-align: middle;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+ background-color: black;
+}
+.header-banner-sample a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  height: 100%;
+  padding: 0.75em 0;
+  color: white;
+}
+
+@media (max-width: 425px){
+  .obi{
+      display: none;
+  }
+}
+@media (min-width: 426px){
+  .obi-mobile{
+      display: none;
+  }
+}
+.kagimoto-b-header-menu{
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+.kagimoto-b-header-menu ul{
+  display: table-row;
+  list-style-type: none;
+}
+.kagimoto-b-header-menu li{
+  display: table-cell;
+  vertical-align: middle;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+ background-color: black;
+}
+.kagimoto-b-header-menu a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  height: 100%;
+  padding: 0.75em 0;
+  color: white;
+}
+.imgbox50l{
+  display: flex;
+  margin-bottom: 35px;
+}
+.imgbox502{
+  width: 50%;
+}
+@media (max-width: 576px){
+  .imgbox502{
+      width: 100%;
+  }
+}
+.imgbox502 p{
+  font-size: 20px;
+  line-height: 35px;
+}
+@media (max-width: 576px){
+  .imgbox502 p{
+      font-size: 14px;
+      line-height: normal;
+  }
+}
+.imgbox503{
+  display: flex;
+}
+.tenposyoukai-container{
+  margin: 0 20px 0 20px;
+}
+@media (max-width: 576px){
+  .tenposyoukai-container{
+      margin: 0 5px 0 5px;
+  }
+}
+.imgbox60{
+  display: flex;
+  margin-bottom: 35px;
+}
+.imgbox70{
+  display: flex;
+  margin-bottom: 35px;
+}
+.favorite-container{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+@media (max-width: 576px){
+  .favorite-container{
+      display: block;
+  }
+}
+.favorite-01{
+  width: 49%;
+}
+@media (max-width: 576px){
+  .favorite-01{
+      width: 100%;
+  }
+}
+.favorite-02{
+  width: 49%;
+}
+@media (max-width: 576px){
+  .favorite-02{
+      width: 100%;
+  }
+}
+.favorite-03{
+  width: 49%;
+}
+@media (max-width: 576px){
+  .favorite-03{
+      width: 100%;
+  }
+}
+.tenposyoukai-container{
+   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+.tikaichi{
+  border-top: 1px solid #919090;
+  padding: 40px 0;
+}
+.imgbox504{
+  padding: 3px;
+  width: 33%;
+}
+@media (max-width: 576px){
+  .imgbox504{
+      width: 50%;
+  }
+}
+.imgbox505{
+  padding: 3px;
+  width: 33%;
+}
+@media (max-width: 576px){
+  .imgbox505{
+      display: none;
+  }
+}
+.favorite-01{
+  padding: 15px;
+}
+.favorite-02{
+  padding: 15px;
+}
+.favorite-03{
+  padding: 15px;
+}
+.kodawari-container h1{
+  text-align: center;
+  margin: 30px 0;
+}
+.kodawari-boarder{
+  border-top: 1px solid #919090;
+}
+.storeinfo{
+  display: flex;
+
+}
+.locator-border{
+  border-top: 1px solid #919090;
+}
+.shopbox{
+  display: flex;
+  padding: 0 0 0 7%;
+}
+.ballphoto{
+  margin-top: 40px;
+}
+.B1F{
+  border-top: 1px solid #919090;
+  padding: 40px 0;
+}
+.floor1{
+  padding: 0 0 40px  0;
+}
+.locator-container h1{
+  text-align: center;
+}
+.tenpomap{
+  text-align: center;
+}
+@media (max-width: 576px){
+  .imgbox50l{
+      display: block;
+  }
+}
+@media (max-width: 576px){
+  .imgbox60{
+      display: block;
+  }
+}
+@media (max-width: 576px){
+  .imgbox70{
+      display: block;
+  }
+}
+@media (max-width: 576px){
+  .imgbox502{
+      margin: 0px;
+  }
+}
+@media (max-width: 576px){
+  .imgbox502{
+      margin: 0px;
+  }
+}
+@media (max-width: 576px){
+  .ballphoto{
+      display: none;
+  }
+}
+@media (max-width: 576px){
+  .shopbox{
+      padding: 5px;
+  }
+}
+.__inner{
+  max-width: 1280px !important;
+}
+.imgbox504 img{
+  width: 100%;
+}
+.imgbox505 img{
+  width: 100%;
+}
+.photo-info-box{
+  width: 50%;
+}
+@media (max-width: 576px){
+  .photo-info-box{
+      width: 100%;
+  }
+}
+.w50l{
+  padding: 1px;
+}
+.txtbox p{
+  font-size: 20px;
+}
+@media (max-width: 576px){
+  .txtbox p{
+      font-size: 15px;
+  }
+}
+.photo-info-box img{
+  width: 100%;
+}
+.imgbox502{
+  padding: 0 15px;
+}
+.sakename-container{
+  display: flex;
+  border-bottom: solid #d3d3d3;
+  width: 100%;
+}
+@media (max-width: 576px){
+  .aiueo-jyun h2{
+      font-size: 15px;
+  }
+}
+@media (max-width: 576px){
+  .meigara-container h2{
+      font-size: 15px;
+  }
+}
+@media (max-width: 576px){
+  .meigara-box{
+      width: 33%;
+  }
+}
+.france-region-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0px 10px 30px;
+  font-size: 13px;
+}
+.france-box{
+  width: 22%;
+  margin: 5px;
+}
+.wine-country-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 576px){
+  .france-box{
+      width: 30%;
+  }
+}
+.wine-country-box{
+  width: 31%;
+  margin: 4px;
+}
+@media (max-width: 576px){
+  .wine-country-box{
+      width: 30%;
+      margin: 5px;
+  }
+}
+.wine-bannar-box img{
+  padding: 2px;
+}
+
+.umenoyado-rogo{
+  padding: 10px;    
+}
+.turuume-rogo{
+  padding: 10px;    
+}
+.nippon-map{
+  width: 100%;
+  padding: 30px;
+}
+.tokusyuu-small-box:hover{
+  color: #919090;
+}
+
+@media (max-width: 576px){
+  .tokusyuu-hihyoujibox{
+      display: none;
+  }
+}
+img:hover {
+  opacity: 0.75; /* 25％ほど透明にする */
+}
+.cart-image{
+  height: 130px;
+}
+.cart-image img{
+  height: 100%;
+}
+.cart-container{
+  text-align: center;
+}
+.nihonsyu-tokusyuu-container{
+  display: flex;
+  height: 175px;
+  list-style: none;
+  padding: 0px;
+  justify-content: space-between;
+}
+.nihonsyu-tokusyuu-box{
+  width:24%;
+  margin: 0 3px;
+}
+@media (max-width: 599px){
+  .gnav-pc {
+      display: block !important;
+  }
+}
+
+@media (max-width: 599px){
+  .__logo h1{
+      position: absolute;
+      top: 5%;
+      left: 12%;
+  }
+}
+.mypage-container{
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: -4%;
+  left: 75%;
+}
+
+.header{
+  position: relative;
+}
+
+@media (min-width: 599px){
+  .mypage-container{
+        display: none;
+  }
+}
+.bxslider2 img{
+  padding: 3px;
+}
+.recommend_01 .bx-wrapper {
+  background-color: transparent;
+  margin: 0px auto;
+  border: none;
+  box-shadow: none;
+}
+.recommend_02{
+  display: inline-block;
+}
+.syoutyu_container_1{
+  height: 290px;
+}
+.syotyu_toppgage_container_2{
+  display: flex;
+}
+.syotyu_toppage_small_box{
+  width:48%;
+}
+.syotyu_toppgage_container_2{
+  display: flex;
+  flex-wrap: wrap;
+}
+.__inner{
+  max-width: 1440px !important;
+}
+.swiper{
+  overflow: hidden;
+}
+.shochu_serch_banner{
+  margin-bottom:20px;
+}
+.shotyu_container_01{
+  display: flex;
+}
+.shoutyuu_search_tab{
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+.swiper-slide img{
+  width: 100%;
+}
+.swiper-wrapper{
+  margin-bottom: 20px;
+}
+.example{
+  border-top: 3px solid #adb5bd;
+}
+.border2{
+  display: inline-block;
+  padding: 5px 10px;
+  border-top: 3px solid #6f42c1;
+  margin-top: -3px;
+}
+.shop_info_area{
+  display: flex;
+}
+
+.shop_info_box{
+  border: solid 2px #FFF;
+}
+
+.shop_info_container{
+  background-color: #f7f7f7;
+}
+@media (max-width: 600px){
+  .shop_info_container{
+        display: none;
+  }
+}
+@media (min-width: 599px){
+  .shop_info_container_mobile{
+        display: none;
+  }
+}
+.shop_info_container_mobile{
+  background-color: #f7f7f7;
+}
+@media (max-width: 600px){
+  .slider_toppage{
+        display: none;
+  }
+}
+@media (min-width: 599px){
+  .slider_toppgage_mobile{
+        display: none;
+  }
+}
+.nihonsyu_tokusyuu-small-container{
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px){
+  .nihonsyu_tokusyuu-small-container{
+        display: none;
+  }
+}
+.nihonsyu_tokusyuu-small-container_mobile{
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 599px){
+  .nihonsyu_tokusyuu-small-container_mobile{
+        display: none;
+  }
+}
+.wine_tokusyuu-small-container{
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px){
+  .wine_tokusyuu-small-container{
+        display: none;
+  }
+}
+.wine_tokusyuu-small-container_mobile{
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 599px){
+  .wine_tokusyuu-small-container_mobile{
+        display: none;
+  }
+}
+@media (min-width: 1280px){
+  .__banner{
+      max-width: 1440px !important;
+  }
+}
+@media screen and (min-width: 1280px){
+  .gnav-pc .__menu {
+      max-width: 1440px;
+  }
+  
+}
+@media (min-width: 599px){
+  .shoutyu_genzairyou_img{
+        margin-left: 30px;
+  }
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  background-color: #ccc;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: none;
+}
+
+.carousel-control-prev-icon:before {
+  content: '\2039';
+  font-size: 24px;
+  color: #fff;
+}
+
+.carousel-control-next-icon:before {
+  content: '\203a';
+  font-size: 24px;
+  color: #fff;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.9;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+}
+
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  transform: translateY(-50%);
+  top: 50% !important; 
+}
+.carousel-control-prev {
+  left: 0;
+}
+.carousel-control-next {
+  right: 0;
+}
+.slick-dots {
+  display: none !important;
+}
+.slick-prev {
+  left: 7px !important;
+}
+
+.slick-next {
+  right: 7px !important;
+}
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 23px !important;
+  color: #0d6efd !important;/*黒にする*/
+  opacity: 1 !important;/*デフォルトは.75が指定されている*/
+}
+@media (max-width: 600px) {
+  .slider {
+    display: none;
+  }
+  .slider_mobile {
+    display: block; /* 表示する */
+  }
+  .requeur_logo_img{
+      padding: 15px !important;
+    }
+  .lequeur_meigara_sarch{
+      width: 70%;
+  }
+  .__logo{
+    text-align: left !important;
+  }
+}
+
+/* 画面幅が600pxより大きい場合 */
+@media (min-width: 601px) {
+  .slider {
+    display: block; /* 表示する */
+  }
+  .slider_mobile {
+    display: none;
+  }
+  .__view-cart-2{
+    display: none;
+  }
+}
+.slider img {
+  width: 100%;
+}
+.slick-slider{
+  margin-bottom: 0px !important;
+}
+.__block--free-2{
+  margin-bottom: 0px !important;
+}
+.requeur_logo_img{
+  padding: 40px;
+}
+.__view-cart-2{
+  width: 30px;
+  padding-top: 6px;
+}
+.side_icons{
+  display: flex;
+  justify-content: space-evenly;
+}
+.new_sake_bx, .sake_new_title, .price_text {
+  display: none;
+}
+.main_contents_banner_middle_02 .container{
+  padding: 0px !important;
+}
+#sticky-header {
+    display: none;
+    width: 100%;
+
+}
+
+.sticky-ul{
+  display: flex;
+  justify-content: space-between;
+}
