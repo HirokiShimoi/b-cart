@@ -548,8 +548,6 @@ li {
 }
 .tokusyuu-small-box{
   margin: 3px;
-  width: 33%;
- 
 }
 .tokusyuu-small-box img{
    width: 100%;
@@ -1472,12 +1470,13 @@ img:hover {
         display: none;
   }
 }
-.wine_tokusyuu-small-container_mobile{
+.wine_tokusyuu-small-container_mobile_top{
   display: flex;
   justify-content: space-between;
 }
+
 @media (min-width: 599px){
-  .wine_tokusyuu-small-container_mobile{
+  .wine_tokusyuu-small-container_mobile_top{
         display: none;
   }
 }
@@ -1689,6 +1688,24 @@ img:hover {
   .sake-link-container-mobile {
     display: block;
   }
+
+  .main_contents_banner_middle_02 .row {
+    padding: 0;
+  }
+
+  .__block--category,
+  .__block--feature,
+  .__block--calendar,
+  .__block--page {
+    display: none;
+  }
+
+}
+
+@media (min-width: 599px) {
+  .wine_tokusyuu-small-container_mobile_winepage  {
+    display: none;
+  }
 }
 
 @media (min-width: 425px) {
@@ -1701,6 +1718,7 @@ img:hover {
   .sake-link-container-mobile {
     display: none;
   }
+
 }
 .sake-banner-container-mobile-box{
   display: flex;
@@ -1718,3 +1736,4 @@ img:hover {
 .__content{
   padding: 0 !important;
 }
+
