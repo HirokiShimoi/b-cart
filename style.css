@@ -1445,7 +1445,7 @@ img:hover {
 }
 .nihonsyu_tokusyuu-small-container{
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 @media (max-width: 600px){
   .nihonsyu_tokusyuu-small-container{
@@ -1454,7 +1454,8 @@ img:hover {
 }
 .nihonsyu_tokusyuu-small-container_mobile{
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  
 }
 @media (min-width: 599px){
   .nihonsyu_tokusyuu-small-container_mobile{
@@ -1736,4 +1737,3 @@ img:hover {
 .__content{
   padding: 0 !important;
 }
-
