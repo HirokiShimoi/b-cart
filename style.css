@@ -1737,3 +1737,9 @@ img:hover {
 .__content{
   padding: 0 !important;
 }
+
+.__block--shipping-address .__heading:after{
+  content:"[配送方法に関する働き]";
+  display: block;
+  font-size: 18px;
+}
