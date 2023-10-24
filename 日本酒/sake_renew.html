@@ -1,0 +1,555 @@
+<style>
+    .newitem_ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .newitem_ul li {
+        flex: 1 0 calc(25% - 16px); /* 一列に4アイテム表示、16pxは余白のための調整（変更可能） */
+        margin: 8px; /* 余白の調整（変更可能） */
+    }
+
+    @media (max-width: 430px) {
+        .newitem_ul li {
+            flex: 1 0 calc(50% - 16px); /* 一列に2アイテム表示 */
+        }
+    }
+</style>
+
+
+
+<div class="main_contents_what_new container">
+    <ul class="newitem_ul">
+        <li>
+            <p>2023.10.20</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3324"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12200_280.jpg" alt="作 純米吟醸 Ｚラベル"></a>
+            <div>
+                <p>作 純米吟醸 Ｚラベル</p>
+                <p>カジュアルかつスタイリッシュ！瑞々しい飲み易さにファン多数！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.20</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=4074"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10952_280.jpg" alt="女泣かせ 純米大吟醸"></a>
+            <div>
+                <p>女泣かせ 純米大吟醸</p>
+                <p>その美味しさに泣けてしまうほど！穏やかで優しくきれいな女酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.20</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3560"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10727_280.jpg" alt="日高見 純米大吟醸 弥助 ひょうたんボトル"></a>
+            <div>
+                <p>日高見 純米大吟醸 弥助 ひょうたんボトル</p>
+                <p>穏やかな吟醸香！しっかりとした旨味！日高見「弥助」の最高峰限定酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.16</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3122"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11805_280.jpg" alt="赤武 F NEWBORN 生酒"></a>
+            <div>
+                <p>赤武 F NEWBORN 生酒</p>
+                <p>AKABUのしぼりたて第一弾！中取りの直詰めらしいボリューム感とキレ！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.16</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6706"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12130_280.jpg" alt="高龍 朱判"></a>
+            <div>
+                <p>高龍 朱判</p>
+                <p>ハイスペックかつ価格を抑えた注目の一本！飲み飽き知らずの絶妙なバランス感！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.16</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6806"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13632_280.jpg" alt="松の司 生もと　純米酒　渡船"></a>
+            <div>
+                <p>松の司 生もと　純米酒　渡船</p>
+                <p>「十六代目米師又八 若井農園」とのコラボ！ナチュラルに米の良さを表現した一本！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.13</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3201"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11249_280.jpg" alt="紀土 純米吟醸　しぼりたて"></a>
+            <div>
+                <p>紀土 純米吟醸　しぼりたて</p>
+                <p>人気「紀土しぼりたて」がリニューアル！季節に合わせ味わいが変更する楽しみも！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.13</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3299"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10305_280.jpg" alt="鳳凰美田 初しぼり 純米吟醸"></a>
+            <div>
+                <p>鳳凰美田 初しぼり 純米吟醸</p>
+                <p>爽やかで美しいキラキラ感！鳳凰美田の人気絶品新酒！                </p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.13</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=5316"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12418_280.jpg" alt="Ohmine 3粒 無濾過生原酒 山田錦"></a>
+            <div>
+                <p>Ohmine 3粒 無濾過生原酒 山田錦</p>
+                <p>弾けるフレッシュ感と飲みやすさ！飲み飽きなく季節の食材ともピッタリ！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.13</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=5275"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13000_280.jpg" alt="九頭龍 燗たのし"></a>
+            <div>
+                <p>九頭龍 燗たのし</p>
+                <p>気分や気温に応じてお好みの温度で！ホットカクテルも楽しめる自由な燗酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.6</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6802"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11256_280.jpg" alt="風の森 試験醸造酒"></a>
+            <div>
+                <p>風の森 試験醸造酒</p>
+                <p>溢れんばかりの大地のエネルギーを醸す！100年先に繋ぐ特別な風の森！！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.6</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6803"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13175_280.jpg" alt="七本鎗 特別純米 ひやおろし"></a>
+            <div>
+                <p>七本鎗 特別純米 ひやおろし</p>
+                <p>味わいは乗りに乗った遅めの出荷！絶妙なバランスを持った円熟の秋酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.10.6</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=5418"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13170_280.jpg" alt="みむろ杉 純米大吟醸 袋しぼり 三輪山 "></a>
+            <div>
+                <p>みむろ杉 純米大吟醸 袋しぼり 三輪山</p>
+                <p>格調高く荘厳な「みむろ杉最高峰酒」！ため息が零れるほどの美しく上質なお酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.29</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6768"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10803_280.jpg" alt="お洒落 純米吟醸 斗瓶囲い"></a>
+            <div>
+                <p>お洒落 純米吟醸 斗瓶囲い</p>
+                <p>当店オリジナルの人気限定酒！とろみある酒質と骨太な旨味の熟成黒牛！ </p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.26</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3179"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10186_280.jpg" alt="九頭龍 大吟醸燗酒（箱入）"></a>
+            <div>
+                <p>九頭龍 大吟醸燗酒（箱入）</p>
+                <p>黒龍酒造渾身の傑作！世界で初めて造られた燗の大吟醸酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.26</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=5318"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12748_280.jpg" alt="司牡丹 裏シリーズ 純米 ひやおろし"></a>
+            <div>
+                <p>司牡丹 裏シリーズ 純米 ひやおろし</p>
+                <p>蔵一押しの隠し酒！ほとんど出回らない秋の美酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.26</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3520"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12351_280.jpg" alt="初亀 純米吟醸 ひやおろし"></a>
+            <div>
+                <p>初亀 純米吟醸 ひやおろし</p>
+                <p>ひと夏の熟成で引き出された極上の旨味！優しいお米の甘味と柔らかな酸！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.26</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3294"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10616_280.jpg" alt="鳳凰美田 Wine-Cell"></a>
+            <div>
+                <p>鳳凰美田 Wine-Cell</p>
+                <p>甘く流れる優雅な時間を演出！フルーティで瑞々しく爽やかな美酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.22</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3289"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10415_280.jpg" alt="鳳凰美田 Black phoenix"></a>
+            <div>
+                <p>鳳凰美田 Black phoenix</p>
+                <p>ファン多数！愛山の個性や可能性を上品かつ綺麗に表現した絶品酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.22</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=5378"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11259_280.jpg" alt="風の森 秋津穂 807"></a>
+            <div>
+                <p>風の森 秋津穂 807</p>
+                <p>風の森の魅力満点！秋津穂80％精米のトロリ心地よい旨味！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.22</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3628"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12006_280.jpg" alt="廣戸川 純米 秋あがり"></a>
+            <div>
+                <p>廣戸川 純米 秋あがり</p>
+                <p>米本来の旨さは純米ならでは！スルスル飲める抜群のバランス！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.22</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3961"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12382_280.jpg" alt="一念不動 特別純米 ひやおろし"></a>
+            <div>
+                <p>一念不動 特別純米 ひやおろし</p>
+                <p>綺麗なバランス、優しい旨味と甘みが絶品！職人自慢のひやおろし！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.22</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6454"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13178_280.jpg" alt="車坂 生もと 純米酒 生酒"></a>
+            <div>
+                <p>車坂 生もと 純米酒 生酒</p>
+                <p>とことん自然製法にこだわった純米酒！蔵付き酵母や天然乳酸菌のパワー！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.22</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3376"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12017_280.jpg" alt="たかちよ 純大吟 おりがらみ生 ハロウィン"></a>
+            <div>
+                <p>たかちよ 純大吟 おりがらみ生 ハロウィン</p>
+                <p>ほんのり甘くピチピチ軽快なおりがらみ！ハロウィンのワクワク感と共に！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.22</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=4732"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12775_280.jpg" alt="陸奥八仙 オレンジラベル 純米吟醸 ひやおろし"></a>
+            <div>
+                <p>陸奥八仙 オレンジラベル 純米吟醸 ひやおろし</p>
+                <p>柑橘感のあるキレイな酸！キリっとシャープなオレンジラベル！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.22</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3257"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10510_280.jpg" alt="宮寒梅 純米吟醸 AUTUMN TIME"></a>
+            <div>
+                <p>宮寒梅 純米吟醸 AUTUMN TIME</p>
+                <p>円熟味を帯びたまろみある味わい！シャープなキレがさらに旨さを引き立てる！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.22</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6799"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13622_280.jpg" alt="流輝 純米吟醸 無ろ過生 玉栄 山廃"></a>
+            <div>
+                <p>流輝 純米吟醸 無ろ過生 玉栄 山廃</p>
+                <p>玉栄の山廃造り！ジューシーな酸味とフルーティーな味わいが心地良い！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.22</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6798"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11776_280.jpg" alt="来福　純米吟醸 ひやおろし"></a>
+            <div>
+                <p>来福　純米吟醸 ひやおろし</p>
+                <p>ひまわりの花酵母から漂う柔らかな旨みがじ～んわり！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.19</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3351"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12008_280.jpg" alt="Takachiyo59(極) 純米吟醸 AI-IPPON"></a>
+            <div>
+                <p>Takachiyo59(極) 純米吟醸 AI-IPPON</p>
+                <p>2つの酒米が奏でるハーモニー!フレッシュで軽快な食中酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.19</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6796"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13128_280.jpg" alt="東一 山田錦 純米 ひやおろし"></a>
+            <div>
+                <p>東一 山田錦 純米 ひやおろし</p>
+                <p>秋野菜と好相性！米どころ佐賀の味わい深いひやおろし！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.19</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=5318"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10896_280.jpg" alt="司牡丹 船中八策 純米 超辛口 ひやおろし"></a>
+            <div>
+                <p>司牡丹 船中八策 純米 超辛口 ひやおろし</p>
+                <p>リッチで厚みのある旨味！「船中八策」らしい骨太辛口ひやおろし！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.19</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6795"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11795_280.jpg" alt="神亀 純米 ひやおろし"></a>
+            <div>
+                <p>神亀 純米 ひやおろし</p>
+                <p>神亀ならではの濃醇なコクはそのままに、フレッシュで飲み易いひやおろし！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.15</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=4858"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12765_280.jpg" alt="二兎 純米 萬歳 七十"></a>
+            <div>
+                <p>二兎 純米 萬歳 七十</p>
+                <p>底知れぬパワーを感じる！大嘗祭に献納された萬歳米を堪能できる一本！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.15</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3316"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10552_280.jpg" alt="鳳凰美田 純米大吟醸 赤判（箱入）"></a>
+            <div>
+                <p>鳳凰美田 純米大吟醸 赤判（箱入）</p>
+                <p>「さわやか」で「きれい」な味わいは絶品中の絶品！ギフトにもオススメ！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.15</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=5392"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13145_280.jpg" alt="農口尚彦研究所 ひやおろし"></a>
+            <div>
+                <p>農口尚彦研究所 ひやおろし</p>
+                <p>円熟した味わいに感じる秋の訪れ！季節の食材とゆったり楽しみたい！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.15</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=5393"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13148_280.jpg" alt="雑賀 純米吟醸 山田錦 秋あがり"></a>
+            <div>
+                <p>雑賀 純米吟醸 山田錦 秋あがり</p>
+                <p>これが雑賀の「秋あがり」！今回は「山田錦」で華やかな旨味！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.15</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6760"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10627_280.jpg" alt="今錦 特別純米 中川村のたま子 ひやおろし"></a>
+            <div>
+                <p>今錦 特別純米 中川村のたま子 ひやおろし</p>
+                <p>ひと夏熟成して穏やかな深み！ちょっと大人の「たま子」。</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.15</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3652"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12021_280.jpg" alt="風の森 ALPHA１ DRY"></a>
+            <div>
+                <p>蓬莱泉 ひやおろし 夢筺(ゆめこばこ)</p>
+                <p>秋だけの至福の味わい！ジンワリとした美味しさが詰まった夢小箱！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.15</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6802"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11256_280.jpg" alt="風の森 試験醸造酒"></a>
+            <div>
+                <p>風の森 ALPHA１ DRY</p>
+                <p>菩提酛の伝統技術とDRY設計の融合！キレよくバランスの良い極上辛口設計！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.8</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6472"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13380_280.jpg" alt="Ohmine 大嶺 3粒　秋麗かすみ生酒　雄町"></a>
+            <div>
+                <p>Ohmine 大嶺 3粒　秋麗かすみ生酒　雄町</p>
+                <p>「Ohmine雄町」の旨味が花開く！美しい霞が織り成す秋の味！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.8</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3418"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11572_280.jpg" alt="御前酒 9NINE ナイン ブラックボトル ひやおろし"></a>
+            <div>
+                <p>御前酒 9NINE ナイン ブラックボトル ひやおろし</p>
+                <p>秋の夜長をほっこり過ごして！御前酒ならではの滑らかでクリーミーなひやおろし！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.8</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3099"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11784_280.jpg" alt="秋鹿 純米吟醸 ひやおろし"></a>
+            <div>
+                <p>秋鹿 純米吟醸 ひやおろし</p>
+                <p>骨太さとキレ抜群の辛口酒！心地よい余韻と円熟味に癒される！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.5</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=4737"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12716_280.jpg" alt="みむろ杉 純吟 渡船弐号"></a>
+            <div>
+                <p>みむろ杉 純吟 渡船弐号</p>
+                <p>大人気ろまんシリーズ！「渡船弐号」と美しい軟水の柔らかな魅力溢れるお酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.5</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3161"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11853_280.jpg" alt="みむろ杉 純米大吟醸 山田錦"></a>
+            <div>
+                <p>みむろ杉 純米大吟醸 山田錦</p>
+                <p>米本来の旨さと優しい酸によるキレ！透明感ある清らかな旨みの食中酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.5</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6706"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12130_280.jpg" alt="高龍 朱判"></a>
+            <div>
+                <p>高龍 朱判</p>
+                <p>ハイスペックかつ価格を抑えた注目の一本！飲み飽き知らずの絶妙なバランス感！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.5</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3490"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10143_280.jpg" alt="黒牛 純米 あきあがり"></a>
+            <div>
+                <p>黒牛 純米 あきあがり</p>
+                <p>黒牛らしいボリューム感のある原酒の秋酒！濃すぎず飲み心地も抜群！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.1</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=4764"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12755_280.jpg" alt="超久 純米 ひやおろし"></a>
+            <div>
+                <p>超久 純米 ひやおろし</p>
+                <p>深くまろやかで濃醇な旨味！味わい膨らむ秋の食材と相性抜群！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.1</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=5387"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13135_280.jpg" alt="蓬莱泉 純米大吟醸 出品酒"></a>
+            <div>
+                <p>蓬莱泉 純米大吟醸 出品酒</p>
+                <p>幻の『裏吟』が登場！蓬莱泉の、最高峰にして究極の酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.9.1</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3203"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10631_280.jpg" alt="紀土 純米吟醸 ひやおろし"></a>
+            <div>
+                <p>紀土 純米吟醸 ひやおろし</p>
+                <p>柔らかな口当たり！スっとキレる優しい印象の酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.29</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6763"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12358_280.jpg" alt="篠峯 ろくまる 純米吟醸 雄町 秋あがり"></a>
+            <div>
+                <p>篠峯 ろくまる 純米吟醸 雄町 秋あがり</p>
+                <p>雄町の旨みが堪能出来る！篠峯の特別なひやおろし！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.29</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3184v"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10183_280.jpg" alt="黒龍 秋あがり"></a>
+            <div>
+                <p>黒龍 秋あがり</p>
+                <p>時の流れが育む熟成の旨さ！秋酒こそ日本酒の本質が味わえる！ </p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.29</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6762"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11774_280.jpg" alt="陸奥八仙 特別純米 緑ラベル ひやおろし"></a>
+            <div>
+                <p>陸奥八仙 特別純米 緑ラベル ひやおろし</p>
+                <p>例年ファンが待ち焦がれる美・秋酒！厚みある旨みも爽やかな印象！！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.29</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3505"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11529_280.jpg" alt="播州一献 純米吟醸 ひやおろし"></a>
+            <div>
+                <p>播州一献 純米吟醸 ひやおろし</p>
+                <p>新蔵にてリニューアルしたひやおろし！美しくも落ち着きある深い旨味とコク！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.29</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3311"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10525_280.jpg" alt="鳳凰美田 純米大吟醸 亀粋 髭判"></a>
+            <div>
+                <p>鳳凰美田 純米大吟醸 亀粋 髭判</p>
+                <p>稀少な酒米「亀粋」を使用した華やかで気品あふれる甘みと香り！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.25</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6465"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13364_280.jpg" alt="車坂 オータムセレクト 魚に合う吟醸酒"></a>
+            <div>
+                <p>車坂 オータムセレクト 魚に合う吟醸酒</p>
+                <p>杜氏が厳選したこの秋最高の一本！季節の食材・魚が一層美味くなる！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.25</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3683"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11525_280.jpg" alt="山和 純米吟醸 ひやおろし 夜長"></a>
+            <div>
+                <p>山和 純米吟醸 ひやおろし 夜長</p>
+                <p>上品ながらもしっかりとした旨み！バランスもセンスも抜群の食中酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.25</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=4064"><img src="http://gigaplus.makeshop.jp/kagimoto/img/11533_280.jpg" alt="南方 純米吟醸 ひやおろし"></a>
+            <div>
+                <p>南方 純米吟醸 ひやおろし</p>
+                <p>香り穏やかキレも抜群！食との相性ピカイチな南方の"ひやおろし"！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.25</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3449"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12339_280.jpg" alt="あたごのまつ 純米吟醸 ささら 冷卸"></a>
+            <div>
+                <p>あたごのまつ 純米吟醸 ささら 冷卸</p>
+                <p>あたごのまつの人気酒「ささら」のひやおろし！ひと夏の熟成を経て旨さもUP！ </p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.25</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=4601"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12729_280.jpg" alt="伯楽星 特別純米 冷卸"></a>
+            <div>
+                <p>伯楽星 特別純米 冷卸</p>
+                <p>芳醇かつ爽やかでキレも良し！秋の味覚と引き立て合う魅力的な味わい！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.25</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=4601"><img src="http://gigaplus.makeshop.jp/kagimoto/img/12731_280.jpg" alt="伯楽星 純米吟醸 冷卸"></a>
+            <div>
+                <p>伯楽星 純米吟醸 冷卸</p>
+                <p>柑橘類を思わせる瑞々しい甘さと爽やかさ！究極の「食中ひやおろし」！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.18</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3321"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10409_280.jpg" alt="鳳凰美田 冷卸 純米吟醸 五百万石"></a>
+            <div>
+                <p>鳳凰美田 冷卸 純米吟醸 五百万石</p>
+                <p>和三盆を思わせる優しい甘みがじんわり。たおやかで上質な味わいの冷卸！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.18</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=3322"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10410_280.jpg" alt="鳳凰美田 冷卸 純米吟醸 山田錦"></a>
+            <div>
+                <p>鳳凰美田 冷卸 純米吟醸 山田錦</p>
+                <p>風味豊かに旨みの増した、山田錦らしい力強さの濃醇ひやおろし！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.13</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=5384"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13130_280.jpg" alt="車坂 純米 山廃純米 秋あがり"></a>
+            <div>
+                <p>車坂 純米 山廃純米 秋あがり</p>
+                <p>様々なお料理に合わせやすい！食欲の秋に拍車がかかる車坂の冷卸！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.10</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6751"><img src="http://gigaplus.makeshop.jp/kagimoto/img/13573_280.jpg" alt="二兎 純米大吟醸 山田錦18 創業333年記念酒"></a>
+            <div>
+                <p>二兎 純米大吟醸 山田錦18 創業333年記念酒</p>
+                <p>丸石醸造333周年記念酒！気品あふれる華やかな超限定美酒！</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.10</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6732"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10316_280.jpg" alt="鳳凰美田 米光BEIKO 渡舟ﾊﾞｰｼﾞｮﾝ"></a>
+            <div>
+                <p>鳳凰美田 米光BEIKO 渡舟ﾊﾞｰｼﾞｮﾝ</p>
+                <p>小林酒造の歴史を今に繋ぐ 150周年特別限定品！『ver.渡船』</p>
+            </div>
+        </li>
+        <li>
+            <p>2023.8.10</p>
+            <a href="https://www.kagimoto-b.com/product.php?id=6733"><img src="http://gigaplus.makeshop.jp/kagimoto/img/10317_280.jpg" alt="米光BEIKO 山田穂ﾊﾞｰｼﾞｮﾝ"></a>
+            <div>
+                <p>鳳凰美田 米光BEIKO 山田穂ﾊﾞｰｼﾞｮﾝ</p>
+                <p>小林酒造の歴史を今に繋ぐ 150周年特別限定品！『ver.山田穂』</p>
+            </div>
+        </li>
+    </ul>
+</div>
