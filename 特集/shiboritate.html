@@ -1,0 +1,121 @@
+<style>
+  .container {
+    display: flex;
+    padding: 10px;
+  }
+
+  .image-section {
+    flex: 0 0 40%;
+    max-width: 40%;
+    height: 100%; /* コンテナの高さを設定 */
+    display: flex; /* 新たに追加して、子要素を中央に配置 */
+    align-items: center; /* 新たに追加して、画像を垂直方向に中央に配置 */
+    justify-content: center;
+  }
+
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* 必要に応じて影を追加 */
+  }
+
+  .text-section {
+    flex: 1;
+    padding-left: 20px;
+    text-align: center; 
+  }
+
+  .text-section h1,
+  .text-section p:not(.product-name) { /* 商品名の段落は除外 */
+    margin: 0 0 10px 0;
+  }
+
+  /* 商品名のスタイルを調整 */
+  .product-names {
+    display: flex;
+    flex-wrap: wrap; /* ここが重要：これによりアイテムが次の行に折り返される */
+    gap: 10px; /* もしブラウザがサポートしていれば、アイテム間のスペースとして利用 */
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え（必要に応じて） */
+  }
+
+  .product-names .product-name { /* 新しいセレクター */
+    margin: 0,10px; /* <p>タグのデフォルトのマージンをリセット */
+    background-color: #eeeeee; /* 背景色を追加するなど、見た目を調整（任意） */
+    padding: 5px; /* パディングを追加（任意） */
+  }
+
+  @media (max-width: 1439px) {
+  .container {
+    /* flexboxの動作を止め、要素を縦に並べる */
+    flex-direction: column;
+  }
+
+  .image-section,
+  .text-section {
+    /* それぞれのセクションが全幅を取るように設定し、縦に並べる */
+    max-width: 100%;
+    width: 100%;
+    /* 必要に応じて追加のスタイリング（例：パディングやマージンの調整） */
+  }
+
+  .image-section {
+      margin-bottom: 20px; /* 好みのピクセル数に調整します */
+  }
+}
+</style>
+  
+  <!-- HTML構造も少し更新します -->
+<div class="container">
+    <div class="image-section">
+        <img src="http://gigaplus.makeshop.jp/kagimoto/img/ct252_11249.jpg" alt="しぼりたて">
+    </div>
+    <div class="text-section">
+        <h2>すっきりとした軽快な飲み口</h2>
+        <p>ひときわフレッシュ！<br>すっきり軽快な心地よい口当たり。</p>
+        <!-- 商品名用の新しいコンテナ -->
+        <div class="product-names">
+            <p class="product-name">紀土 しぼりたて</p>
+        </div>
+    </div>
+</div>
+<div class="hidden_box">
+    <label for="label1">もっと詳しく</label>
+    <input type="checkbox" id="label1"/>
+    <div class="hidden_show">
+        <div class="container">
+            <div class="image-section">
+                <img src="http://gigaplus.makeshop.jp/kagimoto/img/ct252_810_390_12418.jpg" alt="芳醇なしぼりたて">
+            </div>
+            <div class="text-section">
+                <h2>芳醇で味わい豊かなしぼりたて</h2>
+                <p>のどごし爽やかで、味わい芳醇！<br>しっかりとした味わいのお料理にもおすすめです！</p>
+                <!-- 商品名用の新しいコンテナ -->
+                <div class="product-names">
+                    <p class="product-name">赤武 NEWBORN 純米</p>
+                    <p class="product-name">赤武 NEWBORN 純米吟醸</p>
+                    <p class="product-name">鳳凰美田 初しぼり</p>
+                    <p class="product-name">大嶺 3粒無濾過生原酒 山田錦</p> 
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-section">
+                <img src="http://gigaplus.makeshop.jp/kagimoto/img/hiyaorosi_2023_3.jpg" alt="辛口なひやおろし">
+            </div>
+            <div class="text-section">
+                <h2>キリっとしてキレのよい辛口しぼりたて</h2>
+                <p>すっきりとした後味、飲み飽きしない辛口酒<br>食中酒にもおすすめのしぼりたてです。</p>
+                <!-- 商品名用の新しいコンテナ -->
+                <div class="product-names">
+                    <p class="product-name">赤武 NEWBORN F</p>
+                    <p class="product-name">よこやま SILVER7 超辛 生</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  
+  

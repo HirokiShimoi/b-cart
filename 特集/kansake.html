@@ -1,0 +1,150 @@
+<style>
+  .container {
+    display: flex;
+    padding: 10px;
+  }
+
+  .image-section {
+    flex: 0 0 40%;
+    max-width: 40%;
+    height: 100%; /* コンテナの高さを設定 */
+    display: flex; /* 新たに追加して、子要素を中央に配置 */
+    align-items: center; /* 新たに追加して、画像を垂直方向に中央に配置 */
+    justify-content: center;
+  }
+
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* 必要に応じて影を追加 */
+  }
+
+  .text-section {
+    flex: 1;
+    padding-left: 20px;
+    text-align: center; 
+  }
+
+  .text-section h1,
+  .text-section p:not(.product-name) { /* 商品名の段落は除外 */
+    margin: 0 0 10px 0;
+  }
+
+  /* 商品名のスタイルを調整 */
+  .product-names {
+    display: flex;
+    flex-wrap: wrap; /* ここが重要：これによりアイテムが次の行に折り返される */
+    gap: 10px; /* もしブラウザがサポートしていれば、アイテム間のスペースとして利用 */
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え（必要に応じて） */
+  }
+
+  .product-names .product-name { /* 新しいセレクター */
+    margin: 0,10px; /* <p>タグのデフォルトのマージンをリセット */
+    background-color: #eeeeee; /* 背景色を追加するなど、見た目を調整（任意） */
+    padding: 5px; /* パディングを追加（任意） */
+  }
+
+  @media (max-width: 1439px) {
+  .container {
+    /* flexboxの動作を止め、要素を縦に並べる */
+    flex-direction: column;
+  }
+
+  .image-section,
+  .text-section {
+    /* それぞれのセクションが全幅を取るように設定し、縦に並べる */
+    max-width: 100%;
+    width: 100%;
+    /* 必要に応じて追加のスタイリング（例：パディングやマージンの調整） */
+  }
+
+  .image-section {
+      margin-bottom: 20px; /* 好みのピクセル数に調整します */
+  }
+}
+</style>
+  
+  <!-- HTML構造も少し更新します -->
+<div class="container">
+    <div class="image-section">
+        <img src="http://gigaplus.makeshop.jp/kagimoto/img/ct136_1.jpg" alt="辛口燗酒">
+    </div>
+    <div class="text-section">
+        <h2>キリっと飲みたい辛口燗酒</h2>
+        <p>
+          ふくよかで円やかなのも良いけれどやっぱり「辛口」！！<br>オススメの「燗上がり抜群の辛口酒」をご紹介します。</p>
+        <!-- 商品名用の新しいコンテナ -->
+        <div class="product-names">
+            <p class="product-name">宮寒梅 寸鉄</p>
+            <p class="product-name">日高見 超辛 純米</p>
+            <p class="product-name">新亀 純米辛口</p>
+            <p class="product-name">澤屋まつもと 純米</p>
+            <p class="product-name">紀土 カラクチキッド</p>
+            <p class="product-name">超久 純米超辛</p>
+            <p class="product-name">南方 超辛純米</p>
+            <p class="product-name">船中八策</p>
+            <p class="product-name">赤武 F</p>
+            <p class="product-name">あたごのまつ 鮮烈辛口</p>
+            <p class="product-name">越乃寒梅 白ラベル</p>
+            <p class="product-name">九頭龍 逸品</p>
+
+        </div>
+    </div>
+</div>
+<div class="hidden_box">
+    <label for="label1">もっと詳しく</label>
+    <input type="checkbox" id="label1"/>
+    <div class="hidden_show">
+        <div class="container">
+            <div class="image-section">
+                <img src="http://gigaplus.makeshop.jp/kagimoto/img/ct136_2.jpg" alt="芳醇なひやおろし">
+            </div>
+            <div class="text-section">
+                <h2>しっかりとした旨みとコクのある燗酒</h2>
+                <p>ゆっくりじっくり燗を愉しみたい。<br>パワフルな山廃、熟成酒をセレクト</p>
+                <!-- 商品名用の新しいコンテナ -->
+                <div class="product-names">
+                    <p class="product-name">梵 ときしらず</p>
+                    <p class="product-name">松の司 生もと純米</p>
+                    <p class="product-name">雑賀 山廃純米</p>  
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-section">
+                <img src="http://gigaplus.makeshop.jp/kagimoto/img/ct136_3.jpg" alt="燗酒専用">
+            </div>
+            <div class="text-section">
+                <h2>凛としてキレのよい辛口タイプ</h2>
+                <p>燗して飲むことを前提として造られた「燗専用酒」もたくさんご用意。<br>抜群の安定感と燗映えでお楽しみいただけます。</p>
+                <!-- 商品名用の新しいコンテナ -->
+                <div class="product-names">
+                    <p class="product-name">九頭龍 大吟醸</p>
+                    <p class="product-name">九頭龍 燗たのし</p>
+                    <p class="product-name">九頭龍 純米</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-section">
+                <img src="http://gigaplus.makeshop.jp/kagimoto/img/ct136_4.jpg" alt="鍵本セレクト">
+            </div>
+            <div class="text-section">
+                <h2>酒やの鍵本おすすめ燗酒</h2>
+                <p>美味しい料理がさらに引き立つ！<br>おすすめ燗酒をセレクト！</p>
+                <!-- 商品名用の新しいコンテナ -->
+                <div class="product-names">
+                    <p class="product-name">廣戸川 特別純米</p>
+                    <p class="product-name">播州一献 超辛純米</p>
+                    <p class="product-name">睡龍 生もと純米</p>
+                    <p class="product-name">黒牛 純米</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  
+  

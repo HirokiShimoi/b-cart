@@ -1,0 +1,148 @@
+<style>
+    .container {
+      display: flex;
+      padding: 10px;
+    }
+  
+    .image-section {
+      flex: 0 0 40%;
+      max-width: 40%;
+      height: 100%; /* コンテナの高さを設定 */
+      display: flex; /* 新たに追加して、子要素を中央に配置 */
+      align-items: center; /* 新たに追加して、画像を垂直方向に中央に配置 */
+      justify-content: center;
+    }
+  
+    .image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* 必要に応じて影を追加 */
+    }
+  
+    .text-section {
+      flex: 1;
+      padding-left: 20px;
+      text-align: center; 
+    }
+  
+    .text-section h1,
+    .text-section p:not(.product-name) { /* 商品名の段落は除外 */
+      margin: 0 0 10px 0;
+    }
+  
+    /* 商品名のスタイルを調整 */
+    .product-names {
+      display: flex;
+      flex-wrap: wrap; /* ここが重要：これによりアイテムが次の行に折り返される */
+      gap: 10px; /* もしブラウザがサポートしていれば、アイテム間のスペースとして利用 */
+      justify-content: center; /* 水平方向の中央揃え */
+      align-items: center; /* 垂直方向の中央揃え（必要に応じて） */
+    }
+  
+    .product-names .product-name { /* 新しいセレクター */
+      margin: 0,10px; /* <p>タグのデフォルトのマージンをリセット */
+      background-color: #eeeeee; /* 背景色を追加するなど、見た目を調整（任意） */
+      padding: 5px; /* パディングを追加（任意） */
+    }
+
+    @media (max-width: 1439px) {
+    .container {
+      /* flexboxの動作を止め、要素を縦に並べる */
+      flex-direction: column;
+    }
+
+    .image-section,
+    .text-section {
+      /* それぞれのセクションが全幅を取るように設定し、縦に並べる */
+      max-width: 100%;
+      width: 100%;
+      /* 必要に応じて追加のスタイリング（例：パディングやマージンの調整） */
+    }
+
+    .image-section {
+        margin-bottom: 20px; /* 好みのピクセル数に調整します */
+    }
+  }
+  </style>
+  
+  <!-- HTML構造も少し更新します -->
+<div class="container">
+    <div class="image-section">
+        <img src="http://gigaplus.makeshop.jp/kagimoto/img/hiyaorosi_2023_1.jpg" alt="すっきりひやおろし">
+    </div>
+    <div class="text-section">
+        <h2>すっきりとした軽快な飲み口</h2>
+        <p>華やかな香りやフレッシュ感を持つ、軽快なタイプのひやおろしです。<br>角の取れた柔らかさを持ちつつもスッキリとバランスよく、心地よい口当たり。</p>
+        <!-- 商品名用の新しいコンテナ -->
+        <div class="product-names">
+            <p class="product-name">陸奥八仙 オレンジラベル</p>
+            <p class="product-name">あたごのまつ さらら</p>
+            <p class="product-name">伯楽星 ひやおろし</p>
+            <p class="product-name">来福 ひやおろし</p>
+            <p class="product-name">流輝 玉栄 山廃</p>
+            <p class="product-name">初亀 ひやおろし</p>
+            <p class="product-name">蓬莱泉 夢こばこ</p>
+            <p class="product-name">寒紅梅 AKIフクロウ</p>
+            <p class="product-name">紀土 ひやおろし</p>
+            <p class="product-name">大嶺 秋麗 ひやおろし</p>
+            <p class="product-name">よこやま ひやおろし</p>
+
+        </div>
+    </div>
+</div>
+<div class="hidden_box">
+    <label for="label1">もっと詳しく</label>
+    <input type="checkbox" id="label1"/>
+    <div class="hidden_show">
+        <div class="container">
+            <div class="image-section">
+                <img src="http://gigaplus.makeshop.jp/kagimoto/img/hiyaorosi_2023_2.jpg" alt="芳醇なひやおろし">
+            </div>
+            <div class="text-section">
+                <h2>芳醇で熟成感のあるしっかりとした味わい</h2>
+                <p>熟成感のあるしっかりとした味わい、円やかで柔らかな旨みが特徴の芳醇なひやおろし。<br>しっかりとした味わいのお料理にもおすすめです！</p>
+                <!-- 商品名用の新しいコンテナ -->
+                <div class="product-names">
+                    <p class="product-name">陸奥八仙 緑ラベル</p>
+                    <p class="product-name">鳳凰美田 山田錦ひやおろし</p>
+                    <p class="product-name">鳳凰美田 五百万石ひやおろし</p>
+                    <p class="product-name">神亀 ひやおろし</p>
+                    <p class="product-name">黒龍 秋上がり</p>
+                    <p class="product-name">梵 ひやおろし</p>
+                    <p class="product-name">農口尚彦研究所 ひやおろし</p>
+                    <p class="product-name">今錦 ひやおろし</p>
+                    <p class="product-name">一念不動 ひやおろし</p>
+                    <p class="product-name">七本槍 ひやおろし</p>
+                    <p class="product-name">黒牛 秋上がり</p>
+                    <p class="product-name">超久 ひやおろし</p>
+                    <p class="product-name">車坂 ひやおろし</p>
+                    <p class="product-name">車坂 オータムンセレクト</p>
+                    <p class="product-name">南方 ひやおろし</p>
+                    <p class="product-name">雑賀 ひやおろし</p>
+                    <p class="product-name">御前酒 NINE ひやおろし</p>
+                    <p class="product-name">東一 ひやおろし</p>        
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-section">
+                <img src="http://gigaplus.makeshop.jp/kagimoto/img/hiyaorosi_2023_3.jpg" alt="辛口なひやおろし">
+            </div>
+            <div class="text-section">
+                <h2>凛としてキレのよい辛口タイプ</h2>
+                <p>口当たりの柔らかさに、凛としたキレも兼ね備えた、日本酒好き・辛口好きには堪らない<br>飲みごたえのある秋限定辛口酒！</p>
+                <!-- 商品名用の新しいコンテナ -->
+                <div class="product-names">
+                    <p class="product-name">伯楽星 特別純米</p>
+                    <p class="product-name">秋鹿 ひやおろし</p>
+                    <p class="product-name">久礼 辛口純米ひやおろし</p>
+                    <p class="product-name">船中八策 ひやおろし</p>     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  
+  
