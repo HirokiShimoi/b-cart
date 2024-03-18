@@ -1,0 +1,110 @@
+<style>
+    .container {
+      display: flex;
+      padding: 10px;
+    }
+  
+    .image-section {
+      flex: 0 0 40%;
+      max-width: 40%;
+      height: 100%; /* コンテナの高さを設定 */
+      display: flex; /* 新たに追加して、子要素を中央に配置 */
+      align-items: center; /* 新たに追加して、画像を垂直方向に中央に配置 */
+      justify-content: center;
+    }
+  
+    .image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* 必要に応じて影を追加 */
+    }
+  
+    .text-section {
+      flex: 1;
+      padding-left: 20px;
+      text-align: center; 
+    }
+  
+    .text-section h1,
+    .text-section p:not(.product-name) { /* 商品名の段落は除外 */
+      margin: 0 0 10px 0;
+    }
+  
+    /* 商品名のスタイルを調整 */
+    .product-names {
+      display: flex;
+      flex-wrap: wrap; /* ここが重要：これによりアイテムが次の行に折り返される */
+      gap: 10px; /* もしブラウザがサポートしていれば、アイテム間のスペースとして利用 */
+      justify-content: center; /* 水平方向の中央揃え */
+      align-items: center; /* 垂直方向の中央揃え（必要に応じて） */
+    }
+  
+    .product-names .product-name { /* 新しいセレクター */
+      margin: 0,10px; /* <p>タグのデフォルトのマージンをリセット */
+      background-color: #eeeeee; /* 背景色を追加するなど、見た目を調整（任意） */
+      padding: 5px; /* パディングを追加（任意） */
+    }
+  
+    @media (max-width: 1439px) {
+    .container {
+      /* flexboxの動作を止め、要素を縦に並べる */
+      flex-direction: column;
+    }
+  
+    .image-section,
+    .text-section {
+      /* それぞれのセクションが全幅を取るように設定し、縦に並べる */
+      max-width: 100%;
+      width: 100%;
+      /* 必要に応じて追加のスタイリング（例：パディングやマージンの調整） */
+    }
+  
+    .image-section {
+        margin-bottom: 20px; /* 好みのピクセル数に調整します */
+    }
+  }
+  </style>
+    
+    <!-- HTML構造も少し更新します -->
+  <div class="container">
+      <div class="image-section">
+          <img src="http://gigaplus.makeshop.jp/kagimoto/img/11901_810_390.jpg" alt="しぼりたて">
+      </div>
+      <div class="text-section">
+          <h2>春の訪れを楽しむ日本酒</h2>
+          <p>華やかでほのかな甘み。<br>季節のお料理ともにお飲みください。</p>
+          <!-- 商品名用の新しいコンテナ -->
+          <div class="product-names">
+                <a href="https://www.kagimoto-b.com/product.php?id=6377"><p class="product-name">陸奥八仙 URARAラベル</p></a>
+                <a href="https://www.kagimoto-b.com/product.php?id=6358"><p class="product-name">山和 SPRING 夜桜</p></a>
+                <a href="https://www.kagimoto-b.com/product.php?id=3355"><p class="product-name">Takatiyo 花吹雪</p></a>
+                <a href="https://www.kagimoto-b.com/product.php?id=6956"><p class="product-name">雅楽代 花明かり</p></a>
+                <a href="https://www.kagimoto-b.com/product.php?id=4758"><p class="product-name">神亀 SPRING LIGHT</p></a>
+                <a href="https://www.kagimoto-b.com/product.php?id=6536"><p class="product-name">寒紅梅 HARUウサギ</p></a>
+                <a href="https://www.kagimoto-b.com/product.php?id=6354"><p class="product-name">黒龍 春しぼり</p></a>
+                <a href="https://www.kagimoto-b.com/product.php?id=6370"><p class="product-name">播州一献 SPRING SHINE</p></a>
+                <a href="https://www.kagimoto-b.com/product.php?id=3205"><p class="product-name">紀土 春ノ薫風</p></a>
+          </div>
+      </div>
+  </div>
+  <div class="hidden_box">
+      <label for="label1">もっと詳しく</label>
+      <input type="checkbox" id="label1"/>
+      <div class="hidden_show">
+            <div class="container">
+                <div class="image-section">
+                    <img src="http://gigaplus.makeshop.jp/kagimoto/img/12175_810_390_1.jpg" alt="うららかな春のにごり酒">
+                </div>
+                <div class="text-section">
+                    <h2>うららかな春のにごり酒</h2>
+                    <p>フレッシュで華やか！<br>柔らかで上品な春のにごり酒！</p>
+                    <!-- 商品名用の新しいコンテナ -->
+                    <div class="product-names">
+                        <a href="https://www.kagimoto-b.com/product.php?id=3450"><p class="product-name">あたごのまつ はるこい</p></a>
+                        <a href="https://www.kagimoto-b.com/product.php?id=6540"><p class="product-name">超久 にごり火入れ</p></a>
+                    </div>
+                </div>
+            </div>
+      </div>
+  </div>
